@@ -1,0 +1,22 @@
+.block_4 {
+  padding-top: 270px;
+  padding-bottom: 220px;
+  &__items {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 25%;
+  }
+  &__logo {
+    flex: 1 1 80px;
+    margin-bottom: 50px;
+  }
+  &__caption {
+    font-size: 1.388rem;
+  }
+}
