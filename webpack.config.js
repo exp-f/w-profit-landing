@@ -1,5 +1,5 @@
 'use strict';
-
+const fs = require('fs');
 const path = require('path');
 const merge = require('webpack-merge');
 const devserver = require('./webpack/devserver');
@@ -14,6 +14,26 @@ const PATHS = {
   build: path.join(__dirname, 'dist')
 };
 
+const generateHtmlPlugins = (templateDir) =>{
+  const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+
+  return templateFiles.map(item => {
+    const parts = item.split('.');
+    const name = parts[0];
+    const extension = parts[1];
+
+    return new html({
+      inject: false,
+      filename: `${name}.html`,
+      template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`)
+    })
+  })
+};
+
+const htmlPlugins = generateHtmlPlugins(`${PATHS.source}/pages`);
+
+
+
 const common = merge([
   {
     entry: {
@@ -26,7 +46,7 @@ const common = merge([
     devtool: '#cheap-module-source-map',
     plugins: [
       new progressBar()
-    ]
+    ].concat(htmlPlugins)
   },
   babel(),
   files()

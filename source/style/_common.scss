@@ -1,0 +1,23 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  max-width: $container-width;
+  width: 100%;
+  margin: 0 auto;
+}

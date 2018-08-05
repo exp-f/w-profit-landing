@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  background: $header-red;
+  color: $white;
+  width: 100%;
+  &__item {
+    margin: 0 20px;
+    cursor: pointer;
+    transition: $transition-common;
+    padding: 20px 0;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

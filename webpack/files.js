@@ -5,7 +5,7 @@ module.exports = function () {
         {
           test: /\.pug$/,
           use: {
-            loader: ['html-loader', 'pug-loader'],
+            loader: 'pug-loader',
             options: {
               pretty: true
             }

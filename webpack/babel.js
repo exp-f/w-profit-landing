@@ -7,11 +7,11 @@ module.exports = function () {
           use: {
             loader: 'babel-loader',
             options: {
-              presets: ['env', {
+              presets: [['env', {
                 targets: {
                   browsers: ['last 4 versions', 'ie >= 10']
                 }
-              }]
+              }]]
             }
           },
           exclude: [/node_modules/, /vendors/]
