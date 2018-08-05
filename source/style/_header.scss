@@ -13,8 +13,21 @@
   &__item {
     margin: 0 20px;
     cursor: pointer;
-    transition: $transition-common;
     padding: 20px 0;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      transition: $transition-common;
+      background: transparent;
+    }
+    &:hover:before, &.active:before {
+      background: $header-border-hover;
+    }
     &:first-child {
       margin-left: 0;
     }

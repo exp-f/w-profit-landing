@@ -2,13 +2,14 @@ html
   head
     title W-Profit
     link(rel='stylesheet' href='/style.css')
+    script(defer src='/assets/js/index.js')
   body
     header.header.header--desktop
-      .header__item Main
-      .header__item Traffic sources
-      .header__item PRICING MODELS
-      .header__item VERTICALS
-      .header__item CONTACTS
+      .header__item(data-rel="block_1") Main
+      .header__item(data-rel="block_2") Traffic sources
+      .header__item(data-rel="block_3") PRICING MODELS
+      .header__item(data-rel="block_4") VERTICALS
+      .header__item(data-rel="block_5") CONTACTS
     section.block.block_1
       .wrapper
         img(src=require('../images/w-profit-logo.png') width=318 height=86).block_1__logo
@@ -80,7 +81,7 @@ html
             p.block_4__caption Travel
     section.block.block_5
       .wrapper
-        h1.title.block_5__title
+        h1.title.block_5__title Contacts
         .block_5__content
           .block_5__content_item
             .block_5__line Prevezis 13 Flat/Office 101 Nicosia,
@@ -91,7 +92,7 @@ html
             a(href='mailto:hello@w-profit.com').block_5__link hello@w-profit.com
             a(href='#' target='_blank').block_5__link Career
           .block_5__content_item
-            .blocK_5__small_text W-profit is a mobile ad tech agency. We are dedicated to empowering our partners with sophisticated solutions that make it simple for app developers to connect with target audiences.
+            .block_5__small_text W-profit is a mobile ad tech agency. We are dedicated to empowering our partners with sophisticated solutions that make it simple for app developers to connect with target audiences.
               br
               br
               |© 2018 W-profit LTD – All rights reserved.

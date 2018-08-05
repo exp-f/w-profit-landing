@@ -1,4 +1,48 @@
 .block_5 {
+  padding: 135px 0 130px;
   background: url(../images/block-5-bg.svg) $blue;
   color: $white;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_item {
+      flex: 0 0 calc(50% - 70px);
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &:last-child {
+        flex-direction: row;
+        a:first-child {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  &__line {
+    line-height: 1.5;
+    &:first-child {
+      margin-bottom: 60px;
+    }
+  }
+  &__link {
+    color: $white;
+    text-decoration: none;
+    padding-bottom: 13px;
+    border-bottom: 1px solid $white-opacity;
+    &:first-child {
+      margin-bottom: 78px;
+    }
+  }
+  &__small_text {
+    font-size: calc((2rem / 3));
+  }
 }
