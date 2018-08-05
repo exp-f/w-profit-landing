@@ -21,7 +21,6 @@
     "html-webpack-plugin": "^2.28.0",
     "node-sass": "^4.5.2",
     "node-static": "^0.7.9",
-    "pikaday": "^1.7.0",
     "postcss-loader": "^2.0.6",
     "progress-bar-webpack-plugin": "^1.10.0",
     "promise-polyfill": "^6.0.2",
