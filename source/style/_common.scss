@@ -2,6 +2,10 @@ html {
   font-size: 18px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +13,7 @@ html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 .block {
@@ -20,6 +25,12 @@ html {
   max-width: $container-width;
   width: 100%;
   margin: 0 auto;
+  @media (max-width: $tablet-bp) {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .title{

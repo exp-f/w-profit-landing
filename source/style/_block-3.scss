@@ -15,6 +15,9 @@
     padding: 30px 0;
     margin-bottom: 35px;
     filter: drop-shadow(0px 3px 7px rgba(115, 169, 189, 0.26));
+    @media (max-width: $tablet-bp) {
+      flex: 0 0 100%;
+    }
   }
 
   &__caption {

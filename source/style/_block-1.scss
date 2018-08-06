@@ -5,6 +5,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: $tablet-bp) {
+      padding: 75px 15px 0;
+    }
   }
   &__logo {
     margin-bottom: 115px;
@@ -14,11 +17,20 @@
     justify-content: space-between;
     width: 90%;
   }
+  &__title {
+    @media (max-width: $tablet-bp) {
+      font-size: 1.72rem;
+    }
+  }
   &__item {
     text-align: center;
     padding: 5px 60px;
     flex: 0 0 auto;
     position: relative;
+    @media (max-width: $tablet-bp) {
+      padding: 5px 15px;
+      flex: 0 0 calc(100% / 3);
+    }
     span {
       position: absolute;
       bottom: -25px;
@@ -27,6 +39,9 @@
       text-align: center;
       color: $grey;
       font-size: 0.875rem;
+      @media (max-width: $tablet-bp) {
+        bottom: -5px;
+      }
     }
     &:nth-child(2) {
       &:before, &:after {
@@ -36,6 +51,9 @@
         height: 100%;
         width: 1px;
         background: $block-1-border;
+        @media (max-width: $tablet-bp) {
+          height: 55%;
+        }
       }
       &:before {
         left: 0;

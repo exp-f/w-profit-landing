@@ -1,6 +1,7 @@
 html
   head
     title W-Profit
+    meta(name='viewport' content='width=device-width, initial-scale=1')
     link(rel='stylesheet' href='/style.css')
     script(defer src='/assets/js/index.js')
   body
@@ -10,6 +11,14 @@ html
       .header__item(data-rel="block_3") PRICING MODELS
       .header__item(data-rel="block_4") VERTICALS
       .header__item(data-rel="block_5") CONTACTS
+    header.header.header--mobile
+      .header__burger
+      .header__m_menu
+        .header__m_menu__item(data-rel="block_1") Main
+        .header__m_menu__item(data-rel="block_2") Traffic sources
+        .header__m_menu__item(data-rel="block_3") PRICING MODELS
+        .header__m_menu__item(data-rel="block_4") VERTICALS
+        .header__m_menu__item(data-rel="block_5") CONTACTS
     section.block.block_1
       .wrapper
         img(src=require('../images/w-profit-logo.png') width=318 height=86).block_1__logo
