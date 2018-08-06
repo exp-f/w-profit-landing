@@ -1,4 +1,18 @@
 .block_3 {
+  position: relative;
+  @media (max-width: $tablet-bp) {
+    overflow-x: hidden;
+  }
+  &__bg {
+    position: absolute;
+    top: 60px;
+  }
+  .wrapper {
+    @media (max-width: $mobile-bp) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -18,12 +32,18 @@
     @media (max-width: $tablet-bp) {
       flex: 0 0 100%;
     }
+    @media (max-width: $mobile-bp) {
+      margin-bottom: 30px;
+    }
   }
 
   &__caption {
     font-size: 2.888rem;
     & + .block_3__text {
       margin-left: 80px;
+    }
+    @media (max-width: $mobile-bp) {
+      font-size: 2.2222rem;
     }
   }
   &__text {

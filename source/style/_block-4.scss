@@ -25,6 +25,9 @@
       flex: 0 0 calc(50% - 40px);
       margin-bottom: 70px;
     }
+    @media (max-width: $mobile-bp) {
+      flex: 0 0 100%
+    }
   }
   &__logo {
     flex: 1 1 80px;

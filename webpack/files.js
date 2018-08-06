@@ -15,21 +15,21 @@ module.exports = function () {
           test: /\.(jpeg|jpg|png|ico|gif|svg)$/i,
           loader: 'file-loader',
           options: {
-            name: './assets/images/[name].[ext]'
+            name: 'images/[name].[ext]'
           },
         },
         {
           test: /\.json$/i,
           loader: 'file-loader',
           options: {
-            name: './assets/js/json/[name].[ext]'
+            name: 'js/json/[name].[ext]'
           }
         },
         {
           test: /\.(ttf|otf|eot|woff|woff2)$/i,
           loader: 'file-loader',
           options: {
-            name: './assets/fonts/[name].[ext]',
+            name: 'fonts/[name].[ext]',
           }
         }
       ],

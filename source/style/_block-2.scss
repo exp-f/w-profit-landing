@@ -1,5 +1,8 @@
 .block_2 {
   padding-top: 270px;
+  @media (max-width: $mobile-bp) {
+    padding-top: 170px;
+  }
   &__title {
     margin-bottom: 110px;
   }
@@ -17,14 +20,26 @@
     @media (max-width: $tablet-bp) {
       margin-bottom: 100px;
     }
+    @media (max-width: $mobile-bp) {
+      flex: 0 0 50%;
+      margin-bottom: 60px;
+    }
     img {
       margin-bottom: 70px;
       @media (max-width: $tablet-bp) {
         margin-bottom: 35px;
       }
+      @media (max-width: $mobile-bp) {
+        max-width: 60px;
+        height: auto;
+        margin-bottom: 30px;
+      }
     }
     p {
       text-align: center;
+      @media (max-width: $mobile-bp) {
+        max-width: 80%;
+      }
     }
 
   }

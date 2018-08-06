@@ -21,7 +21,39 @@
       display: flex;
       justify-content: flex-start;
       background: transparent;
-
+    }
+  }
+  &__burger {
+    background: url(../images/burger.png);
+    display: block;
+    width: 36px;
+    height: 26px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__m_menu {
+    z-index: 2;
+    background: $header-red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+    transform: translateY(-100vh);
+    transition: $transition-common;
+    &.open {
+      transform: translateY(0);
+    }
+    &__item {
+      font-size: 2rem;
+      margin-bottom: 50px;
+      @media (max-width: $mobile-bp) {
+        font-size: 1.5rem;
+      }
     }
   }
   &__item {

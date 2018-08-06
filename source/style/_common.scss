@@ -41,4 +41,8 @@ body {
   line-height: 1.5;
   text-transform: uppercase;
   margin-bottom: 70px;
+  @media (max-width: $mobile-bp) {
+    margin-bottom: 45px;
+    font-size: 1.555rem;
+  }
 }

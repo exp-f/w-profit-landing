@@ -9,7 +9,7 @@ module.exports = function (paths) {
           test: /(\.css|\.scss)$/,
           include: paths,
           loader: ExtractTextPlugin.extract({
-            publicPath: './assets/css',
+            publicPath: '/',
             fallback: 'style-loader',
             use: [
               {
@@ -41,7 +41,7 @@ module.exports = function (paths) {
       ],
     },
     plugins: [
-      new ExtractTextPlugin('./style.css'),
+      new ExtractTextPlugin('assets/css/style.css'),
     ],
   };
 };

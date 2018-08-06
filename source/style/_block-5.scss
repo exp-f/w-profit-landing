@@ -14,6 +14,10 @@
       padding-left: 60px;
       padding-right: 60px;
     }
+    @media (max-width: $mobile-bp) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
   &__content {
     width: 60%;
@@ -22,6 +26,9 @@
     flex-wrap: wrap;
     @media (max-width: $tablet-bp) {
       width: 100%;
+    }
+    @media (max-width: $mobile-bp) {
+      flex-direction: column;
     }
     &_item {
       flex: 0 0 calc(50% - 70px);
@@ -33,6 +40,20 @@
         flex-direction: row;
         a:first-child {
           margin-right: 15px;
+        }
+      }
+      @media (max-width: $mobile-bp) {
+        &:nth-child(2) {
+          margin-bottom: 50px;
+        }
+        &:nth-child(3) {
+          order: 4;
+        }
+        &:nth-child(4) {
+          order: 3;
+          align-self: flex-end;
+          transform: translateY(-85px);
+          margin-bottom: 0;
         }
       }
     }

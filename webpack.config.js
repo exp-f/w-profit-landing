@@ -41,7 +41,7 @@ const common = merge([
     },
     output: {
       path: PATHS.build,
-      filename: './assets/js/[name].js'
+      filename: 'assets/js/[name].js'
     },
     devtool: '#cheap-module-source-map',
     plugins: [
