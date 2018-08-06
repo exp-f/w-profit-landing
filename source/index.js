@@ -8,7 +8,10 @@ headerItems.forEach((item)=>{
     let rel = document.querySelector(`.${e.target.getAttribute('data-rel')}`);
     let menu = document.querySelector('.header__m_menu.open');
     if (menu) menu.classList.remove('open');
-    rel.scrollIntoView({behavior: 'smooth'});
+    window.scrollTo({
+      top: rel.offsetTop - 100,
+      behavior: 'smooth'
+    })
   });
 });
 
