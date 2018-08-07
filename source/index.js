@@ -9,7 +9,7 @@ headerItems.forEach((item)=>{
     let menu = document.querySelector('.header__m_menu.open');
     if (menu) menu.classList.remove('open');
     window.scrollTo({
-      top: rel.offsetTop - 100,
+      top: rel.offsetTop,
       behavior: 'smooth'
     })
   });
@@ -18,4 +18,8 @@ headerItems.forEach((item)=>{
 
 document.querySelector('.header__burger').addEventListener('click', (e)=>{
   document.querySelector('.header__m_menu').classList.add('open')
+});
+
+document.querySelector('.header_m__close').addEventListener('click', (e)=>{
+  document.querySelector('.header__m_menu').classList.remove('open')
 });

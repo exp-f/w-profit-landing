@@ -1,6 +1,8 @@
 .block_3 {
   position: relative;
+  padding-top: 100px;
   @media (max-width: $tablet-bp) {
+    padding-top: 50px;
     overflow-x: hidden;
   }
   &__bg {

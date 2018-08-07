@@ -34,7 +34,31 @@
     cursor: pointer;
     z-index: 1;
   }
+  &_m__close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    &:before,&:after {
+      content: '';
+      position: absolute;
+      background: $white;
+      height: 50px;
+      width: 1px;
+      display: block;
+      left: 20px;
+    }
+    &:before {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+  }
   &__m_menu {
+    position: relative;
     z-index: 2;
     background: $header-red;
     width: 100%;
@@ -45,7 +69,9 @@
     padding: 50px 0;
     transform: translateY(-100vh);
     transition: $transition-common;
+    max-height: 0;
     &.open {
+      max-height: 100%;
       transform: translateY(0);
     }
     &__item {

@@ -1,16 +1,32 @@
 .block_1 {
   position: relative;
-  @media (max-width: $tablet-bp) {
-    overflow-x: hidden;
-  }
   &__bg {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 110%;
     z-index: -1;
+    &--desk {
+      @media (max-width: $tablet-bp) {
+        display: none;
+      }
+    }
+    &--tablet {
+      display: none;
+      @media (max-width: $tablet-bp) {
+        display: block;
+      }
+      @media (max-width: $mobile-bp) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+      @media (max-width: $mobile-bp) {
+        display: block;
+        top: 92%;
+        width: 100%;
+      }
+    }
   }
   .wrapper {
     padding: 170px 0 0;
@@ -46,6 +62,7 @@
     padding: 50px 0 50px;
     @media (max-width: $mobile-bp) {
       flex-direction: column;
+      background-color: transparent;
     }
   }
   &__title {

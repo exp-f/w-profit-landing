@@ -60,6 +60,8 @@
   }
   &__line {
     line-height: 1.5;
+    text-decoration: none;
+    color: $white;
     &:first-child {
       margin-bottom: 60px;
     }

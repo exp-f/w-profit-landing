@@ -1,7 +1,9 @@
 .block_2 {
-  padding-top: 270px;
+  margin-top: 170px;
+  padding-top: 100px;
   @media (max-width: $mobile-bp) {
-    padding-top: 170px;
+    margin-top: 70px;
+    padding-top: 100px;
   }
   &__title {
     margin-bottom: 110px;

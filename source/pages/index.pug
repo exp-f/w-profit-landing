@@ -19,13 +19,16 @@ html
     header.header.header--mobile
       .header__burger
       .header__m_menu
+        .header_m__close
         .header__m_menu__item(data-rel="block_1") Main
         .header__m_menu__item(data-rel="block_2") Traffic sources
         .header__m_menu__item(data-rel="block_3") PRICING MODELS
         .header__m_menu__item(data-rel="block_4") VERTICALS
         .header__m_menu__item(data-rel="block_5") CONTACTS
     section.block.block_1
-      img(src=require('../images/block-1-bg.svg')).block_1__bg
+      img(src=require('../images/block-1-bg.png')).block_1__bg.block_1__bg--desk
+      img(src=require('../images/block-1-bg-t.png')).block_1__bg.block_1__bg--tablet
+      img(src=require('../images/block-1-bg-m.png')).block_1__bg.block_1__bg--mobile
       .wrapper
         img(src=require('../images/w-profit-logo.png') width=318 height=86).block_1__logo
         h1.title.block_1__title We are W-profit —
@@ -103,7 +106,7 @@ html
             .block_5__line Prevezis 13 Flat/Office 101 Nicosia,
               br
               |1065 Cyprus
-            .block_5__line +7 927 0077657
+            a(href='tel:+79270077657').block_5__line +7 927 0077657
           .block_5__content_item
             a(href='mailto:hello@w-profit.com').block_5__link hello@w-profit.com
             a(href='https://cyprus.hh.ru/employer/3406479' target='_blank').block_5__link Career
