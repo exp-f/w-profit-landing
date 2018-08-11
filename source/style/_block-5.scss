@@ -71,8 +71,16 @@
     text-decoration: none;
     padding-bottom: 13px;
     border-bottom: 1px solid $white-opacity;
+    transition: $transition-common;
     &:first-child {
       margin-bottom: 78px;
+    }
+    &:hover {
+      padding-bottom: 5px;
+      &:first-child {
+        margin-bottom: 86px;
+      }
+      margin-bottom: 8px;
     }
   }
   &__small_text {
